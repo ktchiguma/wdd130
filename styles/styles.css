@@ -18,6 +18,9 @@ h1{
 aside h2{
     position: absolute;
     left: 125px;
+    top: 1%;
+    transform: translateY(-50%);
+    z-index: 1
 }
 img{
     width: 150px;
