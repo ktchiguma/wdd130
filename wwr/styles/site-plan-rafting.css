@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=font-nam&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lacto&display=swap');
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -14,8 +14,8 @@ body{
     --accent2-color: #006400;
 
     
-    --heading-font: 'Times New Roman', serif;
-    --paragraph-font: Arial, sans-serif;
+    /* --heading-font: 'Times New Roman', serif;
+    --paragraph-font: Arial, sans-serif; */
 
     --nav-background-color: #FFFFFF; /* White */
     --nav-link-color: #000000; /* Black */
