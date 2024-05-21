@@ -1,45 +1,65 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
-}
-nav{
+  }
+  
+  nav {
     background-color: steelblue;
-    padding: 10px;
-}
-nav a{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  nav a {
     color: white;
     display: block;
-    padding: 20px;
-}
-h1{
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  h1 {
     color: steelblue;
-}
-aside h2{
+    border-bottom: 2px solid steelblue;
+    padding-bottom: 10px;
+    
+  }
+  
+  aside h2 {
     position: absolute;
     left: 125px;
     top: 1%;
     transform: translateY(-50%);
-    z-index: 1
-}
-img{
+    z-index: 1;
+  }
+  
+  img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-}
-main img{
+  }
+  
+  main img {
     float: right;
-}
-p{
+  }
+  
+  p {
     padding: 0;
-}
-main{
+  }
+  
+  main {
     max-width: 840px;
-}
-aside{
-    width:20rem;
+    padding-bottom: 1.5rem; 
+    padding-top: 1rem;
+  }
+  
+  aside {
+    width: 20rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -47,29 +67,44 @@ aside{
     color: #333;
     text-align: center;
     position: relative;
-}
-aside img{
+  }
+  
+  aside img {
     width: 200px;
     height: auto;
-}
-main img{
+  }
+  
+  main img {
     width: 155px;
     height: auto;
     float: right;
-    
-   
-}
-footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-/* Class Selectors */
-
-.box{
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  
+  .grid main {
+    grid-column: 2/3;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
-}
+  }
+  
+  .grid aside {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  header,
+  footer {
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    border-top: 1px solid #0a0101; 
+    padding-top: 1rem;
+  }
