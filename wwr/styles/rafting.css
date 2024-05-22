@@ -1,81 +1,232 @@
 @import url('https://fonts.googleapis.com/css2?family=font-nam&family=optional-2nd-font-name&display=swap');
 
-:root{
-    --primary-color: #003366;
-    --secondary-color: #b87210;
-    --accent1-color: #FFFF00;
-    --accent2-color: #006400;
+:root {
+  --primary-color: #003366;
+  --secondary-color: #b87210;
+  --accent1-color: #FFFF00;
+  --accent2-color: #006400;
 
-    --nav-background-color: #FFFFFF; /* White */
-    --nav-link-color: #000000; /* Black */
-    --nav-hover-link-color: #FF0000; /* Red */
-    --nav-hover-background-color: #D3D3D3; /* Light Gray */
+  --nav-background-color: #FFFFFF; /* White */
+  --nav-link-color: #000000; /* Black */
+  --nav-hover-link-color: #FF0000; /* Red */
+  --nav-hover-background-color: #D3D3D3; /* Light Gray */
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family:var(--heading-font);
-    color:var(--primary-color);
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
-p{
-    color: var(--secondary-color);
+
+p {
+  color: var(--secondary-color);
 }
-footer{
-    text-align: center;
+
+.gallery img {
+  width: 900px; /* set the desired width */
+  /*height: 150px;  set the desired height */
+  object-fit: cover; /* this will maintain the aspect ratio and fill the container */
+  margin: 10px; /* add some spacing between the images */
 }
-nav.social-media{
-    display: inline-block;
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
-.social-link{
-    color: var(--primary-color);
-    text-decoration: none;
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
-.social-link:hover{
-    text-decoration: underline;
+
+.social-links a {
+  margin-left: 10px;
 }
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+nav.social-media {
+  display: inline-block;
+}
+
+.social-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+}
+
 .social-link img {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-  }
-.container {
-    max-width: 800px; /* Adjust the value as needed */
-    margin: 0 auto; /* Center the container horizontally */
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
 }
+
+.container {
+  max-width: 800px; /* Adjust the value as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
 .hero {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px; /* Adjust the top position as per your requirement */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+
+.hero article img {
+  float: right;
+  margin-left: 1px;
+  width: 150px; /* Adjust the width as per your requirement */
+  height: auto;
+}
+
+.hero article p {
+  margin-bottom: 0;
+}
+
+/* New CSS for the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 10px 20px;
+}
+
+.logo {
+  flex-basis: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.history {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-text-left,
+.history-text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 3;
+}
+
+.history-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .history-content {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
-  
-  .hero h1 {
-    position: absolute;
-    top: 20px; /* Adjust the top position as per your requirement */
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    z-index: 1;
+
+  .history-image {
+    grid-column: auto;
   }
-  
-  .hero article {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    color: white;
+
+  .history-image img {
+    height: 400px;
   }
-  
-  .hero article img {
-    float: right;
-    margin-left: 1px;
-    width: 150px; /* Adjust the width as per your requirement */
-    height: auto;
-  }
-  
-  .hero article p {
-    margin-bottom: 0;
-  }
+}
+
+.adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.adventures figure {
+  flex: 0 0 300px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adventures figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.adventures figure figcaption {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
