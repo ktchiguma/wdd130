@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Kimberly T Chiguma">
+    <meta name="description" content="I am Kimberly and this is my quiz form for my project in this course">
+    <title>form</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    <form>
+        <!-- Question 1: Fill in the blank -->
+        <label for="q1">What is the purpose of the CSS "margin" property?</label>
+        <input type="text" id="q1" name="q1">
+
+        <!-- Question 2: Short answer -->
+        <label for="q2">Explain the difference between "block" and "inline" elements in HTML.</label>
+        <textarea id="q2" name="q2"></textarea>
+
+        <!-- Question 3: Dropdown -->
+        <label for="q3">Which of the following is a valid CSS selector?</label>
+        <select id="q3" name="q3">
+            <option value="" selected disabled>Choose One ...</option>
+            <option value="tag">Tag</option>
+            <option value="class">Class</option>
+            <option value="id">ID</option>
+        </select>
+
+        <!-- Question 4: Integer answer -->
+        <label for="q4">What is the default font-size in pixels for the &lt;body&gt; element?</label>
+        <input type="number" id="q4" name="q4">
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
