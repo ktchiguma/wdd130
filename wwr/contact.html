@@ -2,41 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kimberly T Chiguma">
-    <meta name="description" content="this is a contact page">
-    <title>Contact</title>
+        <html lang="en-US"></html>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kimberly T Chiguma">
+        <meta name="description" content="this is a contact page">
+        <title>Contact</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=font-nam&family=optional-2nd-font-name&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/rafting.css">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=font-nam&family=optional-2nd-font-name&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body class="container">
+<body >
+
+
     <header>
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Rafting Site Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">index</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="contact.html">trips</a></li>
-                <li><a href="trips.html">contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-    </main>
-    <footer>
-        <p>
-            &copy;2024 | WhiteWater Rafting |Kimberly Chiguma
-        </p>
-        <nav class="social-media">
-            <a href="https://www.facebook.com" class="social-link"><img src="images/FB.png" alt="" class="imegi"></a>
-            <a href="https://www.twitter.com" class="social-link"><img src="images/twitter.png" alt="Twitter" class="imegi"></a>
-            <a href="https://www.instagram.com" class="social-link"><img src="images/instagram.png" alt="Instagram" class="imegi"></a>
-        </nav>
-    </footer>
+      <div class="logo">
+        <img src="images/logo.jpg" alt="Rafting Site Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">index</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">trips</a></li>
+            <li><a href="trips.html">contact</a></li>
+        </ul>
+    </nav>
+     </header> 
+    <main> 
+
+        <section class="history">
+           <div class="history-content">
+            <div class="history-text-left">
+              
+
+                <h2>Meet our happy team members </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, architecto quidem rerum culpa saepe eveniet quaerat atque. Repellat animi magni, aliquam ex earum dolore voluptates quas delectus incidunt! Cum, ex.</p>
+            </div>
+            <div class="history-img">
+              <img src="images/happy.jpg" alt="happy clients">
+            </div>
+            <div class="history-text-right">
+              <h2>Company Information</h2>
+              <p>Address: 123 Main St, Anytown USA</p>
+              <p>Phone: (123) 456-7890</p> 
+              <p>Email: info@raftingcompany.com</p>
+            </div>
+           
+           </div>     
+        </section>
+
+      
+          <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required> <br> <br>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required> <br> <br>
+          
+              <label>Purpose of Message:</label>
+              <div class="radio-options">
+                <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
+                <label for="general-inquiry">General Inquiry</label>
+                <input type="radio" id="reservation-question" name="purpose" value="reservation-question" required>
+                <label for="reservation-question">Reservation Question</label>
+                <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion" required>
+                <label for="website-suggestion">Website Suggestion</label>
+              </div> <br> <br>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea> <br><br>
+          
+              <label>
+                <input type="checkbox" name="newsletter" value="subscribe">
+                Please subscribe me to the monthly newsletter
+              </label> <br><br>
+          
+              <button type="submit">Submit</button>
+            </form>
+          </section>  
+        </main> 
+        <footer>
+            <p>
+                &copy;2024 | WhiteWater Rafting |Kimberly Chiguma
+            </p>
+            <nav class="social-media">
+                <a href="https://www.facebook.com" class="social-link"><img src="images/FB.png" alt="" class="imegi"></a>
+                <a href="https://www.twitter.com" class="social-link"><img src="images/twitter.png" alt="Twitter" class="imegi"></a>
+                <a href="https://www.instagram.com" class="social-link"><img src="images/instagram.png" alt="Instagram" class="imegi"></a>
+            </nav>
+        </footer>
+       
+    
+
+
 </body>
 </html>
