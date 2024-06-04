@@ -128,6 +128,11 @@ header {
 .logo {
   flex-basis: auto;
 }
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid: gap 150px;
+}
 .googlemap{
   width: "600" 
   height="450" 
