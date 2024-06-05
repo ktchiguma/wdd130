@@ -79,6 +79,15 @@
     height: auto;
     float: right;
   }
+  header, footer, .grid{
+    max-width: 840px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    border-top: 1px solid #0a0101; 
+    padding-top: 1rem;
+  }
   /* Class Selector */
 
   .grid {
@@ -107,12 +116,3 @@
     color: #000;
   }
   
-  header, footer, .grid{
-    max-width: 840px;
-    margin: 0 auto;
-  }
-  
-  footer {
-    border-top: 1px solid #0a0101; 
-    padding-top: 1rem;
-  }
