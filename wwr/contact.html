@@ -1,155 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <!-- <html lang="en-US"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kimberly T Chiguma">
-    <meta name="description" content="this is a contact page">
-    <title>Contact Page WhiteWater rafting </title>
-        
+    <meta name="description" content="this is a page for trips">
+    <title>Trips Page</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=font-nam&family=optional-2nd-font-name&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=font-nam&family=optional-2nd-font-name&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
-    
 </head>
-<body >
-
-
+<body>
     <header>
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Rafting Site Logo">
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">index</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">trips</a></li>
-            <li><a href="trips.html">contact</a></li>
-        </ul>
-    </nav>
-     </header> 
-    <main> 
-      <h1 class="water">WhiteWater Rafting</h1>
-        <section class="history">
-           <div class="history-content">
-            <div class="history-text-left">
-              <section class="contact-form">
-                <h2>Contact Us</h2>
-                <form>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required> <br> <br>
-              
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required> <br> <br>
-              
-                  <label>Purpose of Message:</label>
-                  <div class="radio-options">
-                    <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
-                    <label for="general-inquiry">General Inquiry</label>
-                    <input type="radio" id="reservation-question" name="purpose" value="reservation-question" required>
-                    <label for="reservation-question">Reservation Question</label>
-                    <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion" required>
-                    <label for="website-suggestion">Website Suggestion</label>
-                  </div> <br> <br>
-              
-                  <label for="message">Message:</label>
-                  <textarea id="message" name="message" required></textarea> <br><br>
-              
-                  <label>
-                    <input type="checkbox" name="newsletter" value="subscribe">
-                    Please subscribe me to the monthly newsletter
-                  </label> <br><br>
-              
-                  <button type="submit">Submit</button>
-                </form>
-              </section>
+        <div class="logo">
+          <img src="images/logo.jpg" alt="Rafting Site Logo">
+      </div>
+      <nav>
+          <ul>
+              <li><a href="index.html">index</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="trips.html">trips</a></li>
+          </ul>
+      </nav>
 
-                
+      <div class="call-to-action">
+        <h2>Book a Trip</h2>
+      </div>
+    </header> 
+
+    <main>
+        <section class="hro">
+          <div class="hero-content">
+            <h1>WhiteWater Rafting Experience</h1>
+            <p>Reservations can be made below with our booking widgets or via phone by calling 800-892-9223. Reservations made online require at least 3 days advanced notice. Some dates are unavailable if fully booked.</p>
+           
+                  <a href="contact.html">Contact Us</a>
                
-            </div>
-            <div class="history-img">
-              <img src="images/girl.jpg" alt="happy clients">
-            </div>
-            <div class="history-text-right">
-              <h2>Company Information</h2>
-              <p>Address: 123 Main St, Anytown USA</p>
-              <p>Phone: (123) 456-7890</p> 
-              <p>Email: info@raftingcompany.com</p>
-            </div>
-           
-           </div>     
-        </section>
-
-        <section>
-          <h2>Meet our happy team members </h2>
-          <div class="image-grid">
-            
-            <figure>
-              <img src="images/e1.jpg" alt="happy clients">
-              <figcaption>
-                <strong>CEO</strong>
-                <br>Mr Muti
-              </figcaption>
-            </figure>
-            <figure>
-              <img src="images/e2.jpg" alt="happy clients">
-              <figcaption>
-                <strong>General Manager</strong>
-                <br>Mr Chatikwatara
-              </figcaption>
-            </figure>
-
-            <figure>
-              <img src="images/e3.jpg" alt="happy clients">
-              <figcaption>
-                <strong>River Trip Manager</strong>
-                <br>Mrs Chimusoro
-              </figcaption>
-            </figure>
-            <figure>
-              <img src="images/e4.jpg" alt="happy clients">
-              <figcaption>
-                <strong>Safety Manager</strong>
-                <br>Mr Dombo
-              </figcaption>
-            </figure>
-           
-            <figure>
-              <img src="images/e1.jpg" alt="happy clients">
-              <figcaption>
-                <strong>Logistics Manager</strong>
-                <br>Mr Chiguma
-              </figcaption>
-            </figure>
-            
-            
+            <p>Explore the beauty of the WhiteWater</p>
+            <button class="btn">Book Now</button>
           </div>
-       
         </section>
-
-        <div class="googlemap">
-          <h2>location on the map</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862623.4166385643!2d29.152802000000005!3d-19.015615249999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a504b2583647%3A0xb99a9c9cc0a8b65a!2sHarare%20Central%2C%20Harare!5e0!3m2!1sen!2szw!4v1717487726775!5m2!1sen!2szw" ></iframe>
-        </div>
-
-             
-        </main> 
-        <p></p>
-        <footer>
-            <p>
-                &copy;2024 | WhiteWater Rafting |Kimberly Chiguma
-            </p>
-            <nav class="social-media">
-                <a href="https://www.facebook.com" class="social-link"><img src="images/FB.png" alt="" class="imegi"></a>
-                <a href="https://www.twitter.com" class="social-link"><img src="images/twitter.png" alt="Twitter" class="imegi"></a>
-                <a href="https://www.instagram.com" class="social-link"><img src="images/instagram.png" alt="Instagram" class="imegi"></a>
-            </nav>
-        </footer>
-       
+    
+        <section class="trip-descriptions">
+          <div class="trip-card">
+            <img src="images/trip1.jpg" alt="1/2 Day Raft Trip">
+            <h3>1/2 Day Raft Trip</h3>
+            <p>Description of the 1/2 Day Raft Trip</p>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="trip-card">
+            <img src="images/trip2.jpg" alt="1 Day Raft Trip">
+            <h3>1 Day Raft Trip</h3>
+            <p>Description of the 1 Day Raft Trip</p>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="trip-card">
+            <img src="images/trip4.jpg" alt="2 Day Raft Trip">
+            <h3>2 Day Raft Trip</h3>
+            <p>Description of the 2 Day Raft Trip</p>
+            <button class="btn">Book Now</button>
+          </div>
+          <div class="trip-card">
+            <img src="images/trip3.jpg" alt="3 Day Raft Trip">
+            <h3>3 Day Raft Trip</h3>
+            <p>Description of the 3 Day Raft Trip</p>
+            <button class="btn">Book Now</button>
+          </div>
+        </section>
+    
+        <section class="trip-overview">
+          <table>
+            <thead>
+              <tr>
+                <th>Trip</th>
+                <th>Duration</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1/2 Day Raft</td>
+                <td>1/2 Day</td>
+                <td>$99</td>
+              </tr>
+              <tr>
+                <td>1 Day Raft</td>
+                <td>1 Day</td>
+                <td>$149</td>
+              </tr>
+              <tr>
+                <td>2 Day Raft</td>
+                <td>2 Days</td>
+                <td>$349</td>
+              </tr>
+              <tr>
+                <td>3 Day Raft</td>
+                <td>3 Days</td>
+                <td>$499</td>
+              </tr>
+              <tr>
+                <td>4 or 5 Day Raft</td>
+                <td>4-5 Days</td>
+                <td>$799</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
     
 
+    
+    <footer>
+        <p>
+            &copy;2024 | WhiteWater Rafting |Kimberly Chiguma
+        </p>
+        <p>View the <a href="images/wireframe.jpg">Trips page wireframe</a></p>
+        <nav class="social-media">
+            <a href="https://www.facebook.com" class="social-link"><img src="images/FB.png" alt="" class="imegi"></a>
+            <a href="https://www.twitter.com" class="social-link"><img src="images/twitter.png" alt="Twitter" class="imegi"></a>
+            <a href="https://www.instagram.com" class="social-link"><img src="images/instagram.png" alt="Instagram" class="imegi"></a><br>
+            
+        </nav>
+        
+    </footer>
 
+
+    
 </body>
 </html>
