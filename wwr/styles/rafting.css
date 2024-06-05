@@ -24,12 +24,37 @@ p {
   color: var(--secondary-color);
 }
 
-.gallery img {
-  width: 900px; /* set the desired width */
-  /*height: 150px;  set the desired height */
-  object-fit: cover; /* this will maintain the aspect ratio and fill the container */
-  margin: 10px; /* add some spacing between the images */
+/* Adventure Section */
+.adventure-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
+
+.adventure-images figure {
+  flex-basis: calc(20% - 1.5rem);
+  margin: 0;
+}
+
+.adventure-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.adventure-images figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* .gallery img {
+  width: 900px; 
+  object-fit: cover; 
+  margin: 10px; 
+} */
 
 footer {
   display: flex;
@@ -60,7 +85,7 @@ nav.social-media {
 }
 
 .social-link {
-  color: var(--primary-color);
+  color: wheat;
   text-decoration: none;
 }
 
@@ -74,11 +99,58 @@ nav.social-media {
   margin: 0 5px;
 }
 
-.container {
-  max-width: 800px; /* Adjust the value as needed */
-  margin: 0 auto; /* Center the container horizontally */
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
 }
 
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  color: white;
+}
+.hero article p {
+  margin-bottom: 0;
+}
+.hero h1 {
+  position: absolute;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.hero article img {
+  float: right;
+  margin-left: 1px;
+  width: 150px; 
+  height: auto;
+}
+
+
+/* this was affecting how the whole page looked  .container {
+  max-width: 800px; 
+  margin: 0 auto; 
+} */
+/* 
 .hero {
   position: relative;
   width: 100%;
@@ -86,7 +158,7 @@ nav.social-media {
 
 .hero h1 {
   position: absolute;
-  top: 20px; /* Adjust the top position as per your requirement */
+  top: 20px; 
   left: 50%;
   transform: translateX(-50%);
   color: white;
@@ -111,13 +183,13 @@ nav.social-media {
 .hero article img {
   float: right;
   margin-left: 1px;
-  width: 150px; /* Adjust the width as per your requirement */
+  width: 150px; 
   height: auto;
 }
 
 .hero article p {
   margin-bottom: 0;
-}
+} */
 
 /* New CSS for the header */
 header {
@@ -170,7 +242,7 @@ nav ul li a:hover {
 
 .history {
   padding: 60px 0;
-  background-color: #f8f8f8;
+  background-color: #7ebdff;
 }
 
 .history-content {
